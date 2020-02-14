@@ -1,7 +1,7 @@
 <template>
   <div id="header">
       <img src="../common/default.png" alt="pic" />
-      <p>Chicken Music</p>
+      <p>LEMusic</p>
   </div>
 </template>
 
