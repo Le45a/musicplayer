@@ -1,8 +1,13 @@
 <template>
   <div class="banner">
-    <swiper v-if='banners.length' :options="swiperOption">
+    <swiper v-if="banners.length" :options="swiperOption">
       <swiper-slide v-for="item in banners" v-bind:key="item.url">
-        <img :src="item.imageUrl" alt="图片" />
+        <div>
+        <a :href="item.url">
+          <img :src="item.imageUrl" alt="图片" />
+        </a>
+        <span>{{item.typeTitle}}</span>
+        </div>
       </swiper-slide>
       <div class="swiper-pagination" slot="pagination"></div>
     </swiper>
@@ -52,6 +57,7 @@ export default {
 
 <style lang="less" scoped>
 .banner {
+  position: relative;
   margin-top: 20px;
   width: 100%;
   .swiper-container {
@@ -59,12 +65,23 @@ export default {
     height: 125px;
     margin: 0 auto;
     .swiper-slide {
-       border-radius: 5px;
-       overflow: hidden;
-      img {
-        width: 100%;
-        height: 100%;
-       
+      border-radius: 5px;
+      overflow: hidden;
+      a {
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      span{
+        background-color: #27acc4;
+        position: absolute;
+        right:0px;
+        bottom:0px;
+        padding:3px 6px;
+        color:#f8f6f6;
+        border-top-left-radius: 5px;
+        font-size: 12px;
       }
     }
   }
