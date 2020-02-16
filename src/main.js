@@ -5,8 +5,9 @@ import router from './router'
 import fastclick from 'fastclick'
 import Axios from 'axios'
 
-Axios.defaults.baseURL='http://localhost:3000'
-Vue.prototype.$http=Axios
+
+Axios.defaults.baseURL = 'http://localhost:3000'
+Vue.prototype.$http = Axios
 Vue.config.productionTip = false
 
 fastclick.attach(document.body)
