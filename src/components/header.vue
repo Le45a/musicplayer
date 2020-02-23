@@ -1,6 +1,5 @@
 <template>
   <div id="header">
-      <img src="../common/default.png" alt="pic" />
       <p>LEMusic</p>
   </div>
 </template>
@@ -19,10 +18,7 @@ export default {
   justify-content: center;
   color:#d6c848;
   height:44px;
-  img{
-    height:44px;
-    width: 44px;
-    margin-right: 10px;
-  }
+  text-align: center;
+
 }
 </style>

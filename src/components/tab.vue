@@ -21,9 +21,10 @@ export default {}
 
 <style lang="less" scoped>
 #tab {
+
   height: 44px;
   line-height: 44px;
-  color: #cecece;
+  color: #7a7a7a;
   display: flex;
   .tab-item {
     padding-bottom: 5px;
@@ -31,11 +32,8 @@ export default {}
     text-align: center;
   }
   .router-link-active {
-    color: #d6c848;
-    span {
-      padding-bottom: 5px;
-      border-bottom: 2px solid #d6c848;
-    }
+    transition: all 0.15s linear;
+    color: #eaefed;
   }
 }
 </style>

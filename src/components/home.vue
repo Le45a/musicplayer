@@ -1,7 +1,9 @@
 <template>
   <div>
-    <m-header />
-    <tab />
+    <div class="sta">
+      <m-header />
+      <tab />
+    </div>
     <router-view></router-view>
   </div>
 </template>
@@ -18,13 +20,13 @@ export default {
   beforeCreate() {
     document
       .querySelector('body')
-      .setAttribute(
-        'style',
-        'background-color: #272727;'
-      )
+      .setAttribute('style', 'background-color: #272727;')
   }
 }
 </script>
 
-<style>
+<style lang='less' scoped>
+.sta{
+  background-color:#474747;
+}
 </style>

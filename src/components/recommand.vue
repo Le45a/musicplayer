@@ -1,6 +1,8 @@
 <template>
-  <div>
-    <banner />
+  <div class="recommand">
+    <div class="bgcolor"></div>
+    <banner class="ban" />
+    <div></div>
   </div>
 </template>
 
@@ -13,5 +15,17 @@ export default {
 }
 </script>
 
-<style>
+<style lang='less' scoped>
+.recommand {
+  position: relative;
+}
+.bgcolor {
+  width: 100%;
+  height: 120px;
+  background-color: #464646;
+}
+.ban {
+  position: absolute;
+  top: 0;
+}
 </style>
